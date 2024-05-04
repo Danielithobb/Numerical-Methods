@@ -19,16 +19,15 @@ def mSimpson38(ecuacion, lim_inf, lim_sup, n):
         fxeval = evaluarFuncion(ecuacion, eval_x)
         if k % 3 == 0:
             sfx_2 = sfx_2+fxeval
-            #u='2'
+            # u='2'
         else:
             sfx_3 = sfx_3+fxeval
-            #u='3'
-        #print(f'{u}  k={k}    x={eval_x}  fx={fxeval}')
+            # u='3'
+        # print(f'{u}  k={k}    x={eval_x}  fx={fxeval}')
     integral = (3*h/8)*(fxa+3*sfx_3+2*sfx_2+fxb)
     print(f'\n      METODO DEL SIMPSON 3/8\n')
     print(f'  Nro. de franjas = {n}\n')
     print(f'        I = {"{0:.7f}".format(integral)}')
-
 
 
 """ x0 = -1
